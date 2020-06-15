@@ -556,7 +556,6 @@ export class SignInStore extends TypedBaseStore<SignInState | null> {
       fatalError(
         `Sign in step '${stepText}' not compatible with two factor authentication`
       )
-      return
     }
 
     this.setState({ ...currentState, loading: true })
